@@ -9,6 +9,8 @@ DO NOT TRY TO INSTALL SPERATLY AS THIS WILL REQUIRE MUCH GOOGLING AND RESEARCHIN
 
 Any questions start an issue and we'll get back to you ASAP.
 
+The Github file with a workflow in isn't neccesary, unless you know what to do with it.
+
 
 # INSTRUCTIONS TO INSTALL AND RUN
 
