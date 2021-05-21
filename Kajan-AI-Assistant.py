@@ -148,9 +148,6 @@ if __name__=='__main__':
             speak('Here are some headlines from the New York Times,Happy reading')
             time.sleep(6)
 
-        elif "camera" in statement or "take a photo" in statement:
-            ec.capture(0,"robo camera","img.jpg")
-
         elif 'search'  in statement:
             statement = statement.replace("search", "")
             webbrowser.open_new_tab(statement)
@@ -168,7 +165,7 @@ if __name__=='__main__':
 
 
         elif "log off" in statement or "sign out" in statement:
-            speak("Ok , your pc will log off in 10 sec make sure you exit from all applications")
+            speak("Ok , your pc will log off in 10 secs make sure you exit from all applications")
             subprocess.call(["shutdown", "/l"])
 
 time.sleep(3)
