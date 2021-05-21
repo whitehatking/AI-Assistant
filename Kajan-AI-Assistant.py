@@ -12,9 +12,9 @@ import json
 import requests
 
 
-print('Loading your AI personal assistant - G One')
+print('Loading your AI personal assistant - Kajan')
 
-engine=pyttsx3.init('sapi5')
+engine=pyttsx3.init()
 voices=engine.getProperty('voices')
 engine.setProperty('voice','voices[0].id')
 
@@ -50,7 +50,7 @@ def takeCommand():
             return "None"
         return statement
 
-speak("Loading your AI personal assistant G-One")
+speak("Loading your AI personal assistant Kajan")
 wishMe()
 
 
@@ -64,8 +64,8 @@ if __name__=='__main__':
             continue
 
         if "good bye" in statement or "ok bye" in statement or "stop" in statement:
-            speak('your personal assistant G-one is shutting down,Good bye')
-            print('your personal assistant G-one is shutting down,Good bye')
+            speak('your personal assistant Kajan is shutting down,Good bye')
+            print('your personal assistant Kajan is shutting down,Good bye')
             break
 
 
@@ -130,22 +130,22 @@ if __name__=='__main__':
             speak(f"the time is {strTime}")
 
         elif 'who are you' in statement or 'what can you do' in statement:
-            speak('I am G-one version 1 point O your persoanl assistant. I am programmed to minor tasks like'
+            speak('I am Kajan version 7 point 8 your persoanl assistant. I am programmed to minor tasks like'
                   'opening youtube,google chrome,gmail and stackoverflow ,predict time,take a photo,search wikipedia,predict weather' 
                   'in different cities , get top headline news from times of india and you can ask me computational or geographical questions too!')
 
 
         elif "who made you" in statement or "who created you" in statement or "who discovered you" in statement:
-            speak("I was built by Mirthula")
-            print("I was built by Mirthula")
+            speak("I was built by Marius, owner of Kajan")
+            print("I was built by Marius, owner of Kajan")
 
         elif "open stackoverflow" in statement:
             webbrowser.open_new_tab("https://stackoverflow.com/login")
-            speak("Here is stackoverflow")
+            speak("Here is stackoverflow for any issues you may have with code")
 
         elif 'news' in statement:
-            news = webbrowser.open_new_tab("https://timesofindia.indiatimes.com/home/headlines")
-            speak('Here are some headlines from the Times of India,Happy reading')
+            news = webbrowser.open_new_tab("https://www.nytimes.com/newsletters/todaysheadlines")
+            speak('Here are some headlines from the New York Times,Happy reading')
             time.sleep(6)
 
         elif "camera" in statement or "take a photo" in statement:
